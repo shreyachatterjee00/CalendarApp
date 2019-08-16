@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="1500dp"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:background="#812E63CA"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="11dp"
+            android:background="#FCF0BCBE"
+            android:text="SETTINGS"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout3"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="414dp"
+            android:layout_height="124dp"
+            android:layout_marginTop="133dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp"
+            android:layout_marginBottom="134dp"
+            android:gravity="right"
+            app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="118dp"
+                android:layout_height="103dp"
+                android:hint="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="84dp"
+            android:text="Nag Time:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginEnd="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_marginBottom="10dp"
+            android:text="Amount of minutes alarm should wait before repeating alarm, if no button is pressed"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="154dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginBottom="21dp"
+            android:text="Amount of minutes alarm should snooze for"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintBottom_toTopOf="@+id/textInputLayout2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="185dp"
+            android:layout_height="66dp"
+            android:text="Snooze Time:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintBottom_toTopOf="@+id/textView17"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:gravity="right"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="120dp"
+                android:layout_height="108dp"
+                android:hint="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="278dp"
+            android:layout_height="131dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="right"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+            app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="118dp"
+                android:layout_height="103dp"
+                android:hint="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="157dp"
+            android:layout_height="62dp"
+            android:text="Number of minutes before event first alarm should occur"
+            app:fontFamily="sans-serif-light"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="237dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="159dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="16dp"
+            android:text="First Alarm:"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            app:layout_constraintEnd_toEndOf="@+id/textView3"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/textInputLayout3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="116dp"
+            android:layout_marginLeft="116dp"
+            android:layout_marginEnd="116dp"
+            android:layout_marginRight="116dp"
+            android:layout_marginBottom="43dp"
+            android:background="#FCF0BCBE"
+            android:onClick="onSubmit"
+            android:text="Submit"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayout2"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginLeft="39dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginBottom="747dp"
+            android:background="#FCF0BCBE"
+            android:text="HOW IT WORKS"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="right"
+            app:layout_constraintBottom_toTopOf="@+id/textView18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6D2E63CA"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+
+    <TextView
+        android:id="@+id/Settings"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="#BCF1AEAE"
+        android:text="SETTINGS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:fontFamily="sans-serif-light" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="120dp"
+        android:background="?android:attr/listDivider"
+        android:color="#050000" />
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="135dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="106dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/FirstAlarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Alarm"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:id="@+id/FirstAlarmDescription"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="Number of minutes before event first alarm should occur "
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="26dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/FirstAlarmInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerHorizontal"
+        android:layout_marginTop="240dp" />
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="255dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="106dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/SnoozeTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Snooze Time"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:id="@+id/SnoozeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Number of minutes alarm should snooze for"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="26dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/SnoozeTimeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="5" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerHorizontal"
+        android:layout_marginTop="360dp" />
+
+
+    <LinearLayout
+        android:layout_width="395dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="375dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="204dp"
+            android:layout_height="121dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/NagTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nag Time"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:id="@+id/NagDescription"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:text="Number of minutes alarm should wait before ringing again, if neither button is pressed "
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="65dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/NagTimeInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="2" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+
+
+    <View
+        android:id="@id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/dividerHorizontal"
+        android:layout_marginTop="515dp" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="530dp"
+        android:background="#BCF1AEAE"
+        android:onClick="onSubmit"
+        android:text="Submit" />
+
+
+</RelativeLayout>
